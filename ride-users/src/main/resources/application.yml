@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: localhost:5432/ReflexProjectManagementCore
+    username: postgres
+    password: postgres
