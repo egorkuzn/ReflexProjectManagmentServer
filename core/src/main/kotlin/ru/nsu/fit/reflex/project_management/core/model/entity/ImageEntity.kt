@@ -6,10 +6,10 @@ import jakarta.persistence.*
 @Entity
 data class ImageEntity(
     @Id
-    val name: String,
+    var name: String,
     @Lob
-    @Basic(fetch=FetchType.LAZY)
-    val image: ByteArray
+    @Basic(fetch = FetchType.LAZY)
+    var image: ByteArray
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
